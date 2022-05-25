@@ -1,0 +1,72 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none
+}
+
+
+
+body {
+    background-color: antiquewhite;
+}
+
+.menu {
+    font-size: 20px;
+}
+
+.menu__item {
+    background-color: aliceblue;
+    
+    margin:10px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline;
+    padding: 5px 3px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 64;
+    padding: 20px;
+    border: 1px solid;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.car__description {
+    font-size: 20px;
+}
+
+.car__characteristic {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+    
+} 
+
+
+
+.cars {
+    text-align: center;
+    width: 1140px;
+    margin: 0px auto;
+}
+
+.about__description {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
