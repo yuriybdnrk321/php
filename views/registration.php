@@ -1,4 +1,5 @@
 <?php 
+    //перевірка введених даних за допомогою регулярних виразів
     if(!empty($_POST)){ 
         $correct = true;
         if(isset($_POST["login"]) && (preg_match("/[!,.@#$%^&*()+=~?`><№;:]/",$_POST["login"]) || strlen($_POST["login"]) < 4)){
@@ -25,12 +26,12 @@
         if(isset($_POST["about_user"])){
             $_POST["about_user"] = strip_tags($_POST["about_user"]);
         }
-
+        //підключення до бази даних об'єктноо-орієнтованим стилем
         $db = new mysqli('localhost', 'root', '', 'lab');
             if(!$db){
                 die('Error connection');
             }
-
+        //якщо дані введено вірно, все записується в базу даних
         if($correct){
        
             $hash_password = password_hash($_POST["password"],PASSWORD_BCRYPT);
